@@ -1,31 +1,64 @@
-# Speech-to-Text
-# Overview
-This is an offline tool for audio recording and transcription using the Vosk speech recognition library, written in Python. It is able to record audio through a microphone and then transcribe the audio into text using the specified Vosk model.
-# Features
-- **Real-time audio recording:** Capture audio input from the microphone.
-- **Voice activity detection (VAD):** Automatically stops recording when the sound falls below a certain threshold for a set duration.
-- **Speech transcription:** Converts recorded audio into text using the Vosk speech recognition engine.
-# Requirements
-## Dependencies
-To run this program, the following Python packages must be installed:
-- pyaudio - For audio input.
-- vosk - For speech recognition and transcription.
-- numpy - For numerical processing of audio frames.
-## Installation
-Use pip to install the required dependencies:
-- pip install pyaudio vosk numpy
-## Additional Files
-Download the Vosk model for speech recognition.Please go to this cloud storage website to get it:https://pan.baidu.com/s/1UUaPZ4l-xPLOuyJU9tmdXw Pin:6666   
-# Usage
-- Clone the repository or download the script.
-- Ensure you have installed the required dependencies and the Vosk model.
-- Run the code.
-- Follow the prompts to start and stop recording:<br>1.Press Enter to start recording.<br>2.Press Enter again to stop the recording.<br>
-- Once the recording is stopped, the audio will be transcribed, and the text will be printed to the console.
-# Configuration
-The following parameters can be adjusted for better performance:
-- THRESHOLD: Controls the voice activity detection sensitivity. Lower values make the recorder more sensitive to quieter sounds.
-- THRESHOLDNUM: Sets how many frames must pass the threshold before stopping the recording.
-# Acknowledgements
-- Vosk API for the speech recognition engine.
-- PyAudio for handling the audio input.
+# VoxForge: Offline Speech-to-Text Tool
+
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![Offline](https://img.shields.io/badge/Works%20Offline-✓-green)
+[![Vosk](https://img.shields.io/badge/Powered%20by-Vosk-ff69b4)](https://alphacephei.com/vosk/)
+
+An offline speech recognition tool with real-time audio recording and transcription using Vosk engine, featuring voice activity detection.
+
+## ✨ Key Features
+- **100% Offline** - No internet required, all processing done locally
+- **Smart VAD** - Voice Activity Detection with adjustable sensitivity
+- **Real-time Transcription** - Powered by Vosk's high-accuracy engine
+- **Cross-Platform** - Supports Windows/macOS/Linux
+- **Lightweight** - Low CPU usage with Python implementation
+
+## 📦 Installation
+
+### Prerequisites
+- Python 3.7+
+- Microphone
+
+#### 📦 Install Dependencies
+
+```bash
+# Install required Python packages
+pip install pyaudio vosk numpy
+```
+
+#### 🌐 Download Model
+Get Vosk Chinese Model from Baidu Cloud:
+🔗 [Download Link](https://pan.baidu.com/s/1UUaPZ4l-xPLOuyJU9tmdXw)
+📌 Extraction Code: 6666
+Extract model files to model directory
+
+#### 🚀 Quick Start
+```bash
+python main.py
+```
+
+#### 🔄 Workflow
+Start Recording - Press Enter to begin<br>
+Speak - (background noise filtered automatically)<br>
+Stop Recording - Press Enter again<br>
+View Results - Transcribed text appears in console
+
+#### ⚙️ Configuration
+Modify parameters in main.py:
+```bash
+# Silence detection threshold (0-1, default 0.5)
+THRESHOLD = 0.5
+# Continuous silence frames to stop (default 50 frames≈1s)
+THRESHOLDNUM = 50
+```
+
+## 📄 Sample Output
+*[SYSTEM]* Recording started...<br>
+*[RESULT]* 欢迎使用VoxForge离线语音转写工具 (Welcome to VoxForge offline speech transcription)<br>
+*[RESULT]* 当前时间是下午3点20分 (Current time is 3:20 PM)<br>
+*[SYSTEM]* Silence detected, recording stopped<br>
+
+## 🙏 Acknowledgements
+[Vosk](https://alphacephei.com/vosk/) - Efficient offline ASR engine<br>
+[PyAudio](https://people.csail.mit.edu/hubert/pyaudio/) - Cross-platform audio I/O<br>
+Open-source community contributions<br>

@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
 ![Offline](https://img.shields.io/badge/Works%20Offline-✓-green)
 [![Vosk](https://img.shields.io/badge/Powered%20by-Vosk-ff69b4)](https://alphacephei.com/vosk/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 An offline speech recognition tool with real-time audio recording and transcription using Vosk engine, featuring voice activity detection.
 

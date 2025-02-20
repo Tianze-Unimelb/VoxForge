@@ -27,9 +27,9 @@ pip install pyaudio vosk numpy
 ```
 
 #### 🌐 Download Model
-Get Vosk Chinese Model from Baidu Cloud:
-🔗 [Download Link](https://pan.baidu.com/s/1UUaPZ4l-xPLOuyJU9tmdXw)
-📌 Extraction Code: 6666
+Get Vosk Chinese Model from Baidu Cloud:<br>
+🔗 [Download Link](https://pan.baidu.com/s/1UUaPZ4l-xPLOuyJU9tmdXw)<br>
+📌 Extraction Code: 6666<br>
 Extract model files to model directory
 
 #### 🚀 Quick Start

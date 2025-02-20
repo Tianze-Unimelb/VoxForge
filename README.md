@@ -20,31 +20,31 @@ An offline speech recognition tool with real-time audio recording and transcript
 - Python 3.7+
 - Microphone
 
-#### 2.1 Install Dependencies 📦 
+### Install Dependencies 📦 
 
 ```bash
 # Install required Python packages
 pip install pyaudio vosk numpy
 ```
 
-#### 2.2 Download Model 🌐 
+### Download Model 🌐 
 Get Vosk Chinese Model from Baidu Cloud:<br>
 🔗 [Download Link](https://pan.baidu.com/s/1UUaPZ4l-xPLOuyJU9tmdXw)<br>
 📌 Extraction Code: 6666<br>
 Extract model files to model directory
 
-#### 2.3 Quick Start 🚀 
+### Quick Start 🚀 
 ```bash
 python main.py
 ```
 
-#### 2.4 Workflow 🔄 
+### Workflow 🔄 
 Start Recording - Press Enter to begin<br>
 Speak - (background noise filtered automatically)<br>
 Stop Recording - Press Enter again<br>
 View Results - Transcribed text appears in console
 
-#### 2.5 Configuration ⚙️ 
+### Configuration ⚙️ 
 Modify parameters in main.py:
 ```bash
 # Silence detection threshold (0-1, default 0.5)
